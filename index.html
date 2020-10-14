@@ -5,19 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+   
     <title>WeatherPy</title>
 </head>
+<body>
 
- <div class="container">
+<nav class= "navbar navbar-expand-lg">
+    <a class= "navbar-brand" href="../Web-Design-Challenge/index.html">WeatherPy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class ="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class= "dropdown-item" href="LatTemp.html">Max Temperature</a>
+                    <a class= "dropdown-item" href="LatHum.html">Humidity</a>
+                    <a class= "dropdown-item" href="LatCloud.html">Cloudiness</a>
+                    <a class="dropdown-item" href="LatWind.html">Wind Speed</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class= "nav-link" href="Comparison.html">Comparison </a>
+            </li>
+            <li class= "nav-item">
+                <a class="nav-link" href="Data.html">Data</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+<div class="container">
 
     <div class="row">
 
         <!-- First of two columns -->
-        <div class="col-md-8">
+        <div class="col-md-6">
             <h1>
                 Latitude vs. X
             </h1>
-            <img src="/Web-Design-Challenge/WebVisualizations/visualizations/LatCloud.png"  alt="Cloudiness Graph" ALIGN="left">
+            <img src="../Web-Design-Challenge/WebVisualizations/visualizations/LatCloud.png"  alt="Cloudiness Graph" ALIGN="left">
             <p>
                 The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.
                 
@@ -28,24 +57,24 @@
         <div class="col-md-4">
             <h2>
                 Visualizations
-            </h2>
-            
+            </h2> 
+            <div class="col-sm-1-md-2">
                 <a target="_blank" href="/Web-Design-Challenge/LatCloud.html">
-                <img src="/Web-Design-Challenge/WebVisualizations/visualizations/LatCloud.png" alt="Cloudiness Graph"> </a>
+                <img src="../Web-Design-Challenge/WebVisualizations/visualizations/LatCloud.png" alt="Cloudiness Graph"> </a>
                 <a target="_blank" href="/Web-Design-Challenge/LatHum.html">
-                <img src="/Web-Design-Challenge/WebVisualizations/visualizations/LatHum.png" alt="Humidity Graph"> </a>
+                <img src="../Web-Design-Challenge/WebVisualizations/visualizations/LatHum.png" alt="Humidity Graph"> </a>
+            </div>
+            <div class="col-sm-1-md-2">    
                 <a target="_blank" href="/Web-Design-Challenge/LatTemp.html">
-                <img src="/Web-Design-Challenge/WebVisualizations/visualizations/LatTemp.png" alt="Temp Graph"></a>
+                <img src="../Web-Design-Challenge/WebVisualizations/visualizations/LatTemp.png" alt="Temp Graph"></a>
                 <a target="_blank" href="/Web-Design-Challenge/LatWind.html">
-                <img src="/Web-Design-Challenge/WebVisualizations/visualizations/LatWind.png" alt="Wind Graph">
+                <img src="../Web-Design-Challenge/WebVisualizations/visualizations/LatWind.png" alt="Wind Graph">
                 </a>
-        </div>
-    </div>
-   
+            </div>
 
-    
-<body>
-    <a target="_blank" href="/Web-Design-Challenge/Comparison.html">Comparison Page</a>
-    <a target="_blank" href="/Web-Design-Challenge/Data.html">Data Page</a>
+        </div>
+
+
+
 </body>
 </html>
