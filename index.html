@@ -9,14 +9,16 @@
     <title>WeatherPy</title>
 </head>
 <body>
-                
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class= "navbar-brand" href="../Web-Design-Challenge/index.html">WeatherPy</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<!-----Navigation Bar----->
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="navigation">                
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class= "navbar-brand" href="../Web-Design-Challenge/index.html">WeatherPy</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class ="navbar-nav mr-auto">
             <li class="nav-item active">
                 <a class="nav-link" href="../Web-Design-Challenge/index.html">Home <span class="sr-only">(current)</span></a>
@@ -38,49 +40,63 @@
                     <a class="dropdown-item" href="LatWind.html">Wind Speed</a>
                 </div>
             </li>
-      </ul>
-    </div>
+        </ul>
+      </div>
   </nav>
-           
-
-
-
+</div>           
+<!-----Content------>
 <div class="container">
+  <div class="row">
+    <div class="col-lg-7 col md-12">
+      <!----Left Section-->
+      <div class="box">
+        <h1> Summary: Latitude vs. X</h1>
+        <img src="../Web-Design-Challenge/WebVisualizations/visualizations/LatCloud.png"  alt="Cloudiness Graph" ALIGN="left">
+        <p>
+            Have you ever wondered how living or visiting different cities can have variable types of weather? For this project, a sample of cities all around the world were taken from OpenWeatherMapAPI and looked at for a certain time frame. With this data, we wanted to look at how the latitude of the city affected certain weather. 
+        </p>
+        <p>    
+            In science we have learned that generally it is warmer closer to the equator and colder as you get further out. Will that hold true? Does it affect any other weather factos?
+            For this analysis we looked at maximum temperature, humidity, cloudiness, and wind. From the data, MatplotLib was used to create the graphical representations of the result. You will be able to click through to see the results. You can also use the navigation bar to take you between the pages of the site. 
+        </p> 
+      </div>
+    </div>
 
-    <div class="row">
-
-        <!-- First of two columns -->
-        <div class="col-md-6">
-            <h1>
-                Latitude vs. X
-            </h1>
-            <img src="../Web-Design-Challenge/WebVisualizations/visualizations/LatCloud.png"  alt="Cloudiness Graph" ALIGN="left">
-            <p>
-                The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.
-                
-                Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb. </p> 
-        </div>
-
-        <!-- Second of two columns -->
-        <div class="col-md-4">
-            <h2>
-                Visualizations
-            </h2> 
-            <div class="col-sm-1-md-2">
-                <a target="_blank" href="/Web-Design-Challenge/LatCloud.html">
-                <img src="../Web-Design-Challenge/WebVisualizations/visualizations/LatCloud.png" alt="Cloudiness Graph"> </a>
-                <a target="_blank" href="/Web-Design-Challenge/LatHum.html">
-                <img src="../Web-Design-Challenge/WebVisualizations/visualizations/LatHum.png" alt="Humidity Graph"> </a>
+    <div class="col-lg-5 col-md-12">
+    <!---Right Section--->
+      <div class="box">
+        <h2>Visualizations</h2>
+        <div class="container">
+          <div class="row">
+            <div class= "col-md-6 sm-1">
+              <a target="_blank" href="/Web-Design-Challenge/LatCloud.html">
+              <img class="panel" src="../Web-Design-Challenge/WebVisualizations/visualizations/LatCloud.png" alt="Cloudiness Graph"> </a>
             </div>
-            <div class="col-sm-1-md-2">    
-                <a target="_blank" href="/Web-Design-Challenge/LatTemp.html">
-                <img src="../Web-Design-Challenge/WebVisualizations/visualizations/LatTemp.png" alt="Temp Graph"></a>
-                <a target="_blank" href="/Web-Design-Challenge/LatWind.html">
-                <img src="../Web-Design-Challenge/WebVisualizations/visualizations/LatWind.png" alt="Wind Graph">
-                </a>
+            
+            <div class="col-md-6 sm-1">
+              <a target="_blank" href="/Web-Design-Challenge/LatHum.html">
+              <img class="panel" src="../Web-Design-Challenge/WebVisualizations/visualizations/LatHum.png" alt="Humidity Graph"> </a>
             </div>
+          </div>
 
+          <div class="row">
+            <div class="col-md-6 sm-1">
+              <a target="_blank" href="/Web-Design-Challenge/LatTemp.html">
+              <img class="panel" src="../Web-Design-Challenge/WebVisualizations/visualizations/LatTemp.png" alt="Temp Graph"></a>
+            </div>
+          
+            <div class="col-md-6 sm-1">
+              <a target="_blank" href="/Web-Design-Challenge/LatWind.html">
+              <img class="panel" src="../Web-Design-Challenge/WebVisualizations/visualizations/LatWind.png" alt="Wind Graph"></a>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 
@@ -89,3 +105,6 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+      

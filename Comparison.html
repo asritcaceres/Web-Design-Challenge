@@ -8,27 +8,82 @@
     <title>Comparison Page</title>
 </head>
 
- <div class="container">
 
-    <div class="row">
-
-        <!-- First of two columns -->
-        <div class="col-md-2">
-            <h1>
-                Comparisons
-            </h1>
-            <p> The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.
+<body>
                 
-                Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb. </p>
-            <a target="_blank" href="/Web-Design-Challenge/LatCloud.html">
-                <img src="../Web-Design-Challenge/WebVisualizations/visualizations/LatCloud.png" alt="Cloudiness Graph"> </a>
-                <a target="_blank" href="/Web-Design-Challenge/LatHum.html">
-                <img src="../Web-Design-Challenge/WebVisualizations/visualizations/LatHum.png" alt="Humidity Graph"> </a>
-        <div class="col-md-2"  >     
-                <a target="_blank" href="/Web-Design-Challenge/LatTemp.html">
-                <img src="../Web-Design-Challenge/WebVisualizations/visualizations/LatTemp.png" alt="Temp Graph"></a>
-                <a target="_blank" href="/Web-Design-Challenge/LatWind.html">
-                <img src="../Web-Design-Challenge/WebVisualizations/visualizations/LatWind.png" alt="Wind Graph">
-                </a>
-               
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class= "navbar-brand" href="../Web-Design-Challenge/index.html">WeatherPy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class ="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../Web-Design-Challenge/Comparison.html">Comparison <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class= "nav-link" href="Comparison.html">Comparison </a>
+                </li>
+                <li class= "nav-item">
+                    <a class="nav-link" href="Data.html">Data</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class= "dropdown-item" href="LatTemp.html">Max Temperature</a>
+                        <a class= "dropdown-item" href="LatHum.html">Humidity</a>
+                        <a class= "dropdown-item" href="LatCloud.html">Cloudiness</a>
+                        <a class="dropdown-item" href="LatWind.html">Wind Speed</a>
+                    </div>
+                </li>
+          </ul>
         </div>
+      </nav>
+</body>
+</html>
+
+<h1>
+    Comparisons
+</h1>
+<p> Below are the graphs to show the comparison at the high level. You can click into each one to get more information.</p>
+
+ 
+
+    <!-- First of two columns -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 sm-1">
+            <a target="_blank" href="/Web-Design-Challenge/LatTemp.html">
+            <img id="comparison" src="../Web-Design-Challenge/WebVisualizations/visualizations/LatTemp.png" alt="Temp Graph"></a>
+            </div>
+            <div class="col-md-6 sm-1">    
+            <a target="_blank" href="/Web-Design-Challenge/LatCloud.html">
+            <img id="comparison" src="../Web-Design-Challenge/WebVisualizations/visualizations/LatCloud.png" alt="Cloudiness Graph"> </a>
+            </div>
+        </div>
+    <!-- Second of two columns-->
+        <div class="row">
+            <div class="col-md-6 sm-1"  >     
+            <a target="_blank" href="/Web-Design-Challenge/LatHum.html">
+            <img id="comparison" src="../Web-Design-Challenge/WebVisualizations/visualizations/LatHum.png" alt="Humidity Graph"> </a>
+            </div>
+            <div class="col-md-6 sm-1"  > 
+            <a target="_blank" href="/Web-Design-Challenge/LatWind.html">
+            <img id="comparison" src="../Web-Design-Challenge/WebVisualizations/visualizations/LatWind.png" alt="Wind Graph"></a>
+            </div>
+        </div>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
