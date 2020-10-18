@@ -1,1 +1,2 @@
 # Web-Design-Challenge
+In this project, I created a webpage using the OpenWeatherAPI graphs that were created. It ultimately showed the comparison of latitude of the sample of citites and how the weather was affected. These webages are interactive. One can navigate through the pages and click on the graphs to get more information about the results.
